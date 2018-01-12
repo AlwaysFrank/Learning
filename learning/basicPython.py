@@ -11,6 +11,9 @@ false_boolean =False;
 #string
 my_name = "Frank Wang";
 print(my_name)
+habit = "Python 是一门有趣的语言\n加油！"
+print(habit);
+print("The habit length is %d"%(len(habit)))
 
 #while loop
 num =1;
@@ -56,3 +59,6 @@ for key in my_dictionary:
 
 for key,value in my_dictionary.items():
     print("%s--->%s"%(key,value))
+
+# **  //
+print("10**5:%d,15//4:%d"%(10**5,15//4))
