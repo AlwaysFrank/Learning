@@ -1,44 +1,44 @@
 # variable
-one = 1;
-two = 2;
-double = 2.66666;
-print(one);
+one = 1
+two = 2
+double = 2.66666
+print(one)
 
-#booleans
-true_boolean = True;
-false_boolean =False;
+# booleans
+true_boolean = True
+false_boolean =False
 
 #string
-my_name = "Frank Wang";
+my_name = "Frank Wang"
 print(my_name)
 habit = "Python 是一门有趣的语言\n加油！"
-print(habit);
+print(habit)
 print("The habit length is %d"%(len(habit)))
 
 #while loop
-num =1;
+num =1
 while num <=5 :
-    print(num,end='');
-    num += 1;
+    print(num,end='')
+    num += 1
 
 #for loop
 
-for i in range(1, 11):print(i,end='');
+for i in range(1, 11):print(i,end='')
 
 
 #array
 
 my_array = [1,2,3,"666",4,5]
-print();
+print()
 for iter in my_array:
     print(iter,end='\t')
-print();
+print()
 print(my_array[0])
 print(my_array[3],end='\n')
 
 #append
 book_shelf = []
-book_shelf.append("Hello");
+book_shelf.append("Hello")
 book_shelf.append("2018")
 print(book_shelf[0])
 print(book_shelf[1])
@@ -64,7 +64,7 @@ for key,value in my_dictionary.items():
 print("10**5:%d,15//4:%d"%(10**5,15//4))
 
 #array sort and reverse
-my_array_for_test = list('20180113');
-temp_array = sorted(my_array_for_test);
-temp_array_reverse = reversed(my_array_for_test);
-print('before: %s; \nafter :%s;\nreverse :%s;'%(my_array_for_test, temp_array, list(temp_array_reverse)));
+my_array_for_test = list('20180113')
+temp_array = sorted(my_array_for_test)
+temp_array_reverse = reversed(my_array_for_test)
+print('before: %s; \nafter :%s;\nreverse :%s;'%(my_array_for_test, temp_array, list(temp_array_reverse)))
