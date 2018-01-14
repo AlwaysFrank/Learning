@@ -62,3 +62,9 @@ for key,value in my_dictionary.items():
 
 # **  //
 print("10**5:%d,15//4:%d"%(10**5,15//4))
+
+#array sort and reverse
+my_array_for_test = list('20180113');
+temp_array = sorted(my_array_for_test);
+temp_array_reverse = reversed(my_array_for_test);
+print('before: %s; \nafter :%s;\nreverse :%s;'%(my_array_for_test, temp_array, list(temp_array_reverse)));
