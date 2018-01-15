@@ -68,3 +68,32 @@ my_array_for_test = list('20180113')
 temp_array = sorted(my_array_for_test)
 temp_array_reverse = reversed(my_array_for_test)
 print('before: %s; \nafter :%s;\nreverse :%s;'%(my_array_for_test, temp_array, list(temp_array_reverse)))
+
+# tuple
+my_tuple = tuple(['I','am','a','boy.'])
+print(my_tuple)
+
+#string join
+my_string_for_join = ('usr','bin','lib64')
+print('Dir:%s'%('\\'.join(my_string_for_join)))
+
+# seq
+seq = ('name','age','sex')
+dict_temp = dict.fromkeys(seq,123)
+print(dict_temp)
+#print(dict_temp['birthday']) error ,so we should use get() method for some probably invaild value
+print(dict_temp.get('birthday'))
+print('birthday is in dictionary: %s'%('birthday' in dict_temp))
+print('dict.items():%s'%(dict_temp.items()))
+
+#import : from XXX import XX,XX,XX
+import sys
+print('python\'s path :%s'%(sys.path))
+
+#special =
+x,y,z = 1,2,3
+print(x,y,z)
+
+student={'name':'Frank','age':'27'}
+key,value = student.popitem()
+print(key,value)
