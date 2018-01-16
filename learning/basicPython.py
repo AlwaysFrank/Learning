@@ -97,3 +97,17 @@ print(x,y,z)
 student={'name':'Frank','age':'27'}
 key,value = student.popitem()
 print(key,value)
+
+# block should have the same indent
+#while
+n = 1
+while n < 5:
+
+    print('Loops 1: ',n)
+
+    n+=1
+# iterator
+#range
+for num1,num2 in zip(range(3),range(100)):
+    assert num1==num2
+    print('zip :',num1,num2)
