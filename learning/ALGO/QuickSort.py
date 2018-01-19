@@ -35,7 +35,7 @@ def partition(L, first, last):
     return right
 
 #test
-origin = [2,0,1,8,0,1,1,9,-5]
+origin = [2,0,1,8,0,1,1,9,-5,5]
 print('before :',origin)
 quicksort(origin)
 print('after :',origin)
