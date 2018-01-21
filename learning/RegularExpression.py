@@ -26,6 +26,18 @@ else:
 print(re.match(r'^(\d+)(0*)$','102300').groups())
 print(re.match(r'^(\d+?)(0*)$','102300').groups())
 
+pt = re.compile(r'(\w+)(\w*)')
+
+greeting = 'i say, hello world!'
+print(pt.match(greeting).groups())
+print(pt.sub(r'2 1',greeting))
+
+def func(m):
+    return m.group(1).title() + '' +m.group(2).title()
+
+print(pt.sub(func, greeting))
+
+
 
 #re.I(re.IGNORECASE): 忽略大小写（括号内是完整写法，下同）
 #M(MULTILINE): 多行模式，改变'^'和'$'的行为（参见上图）
