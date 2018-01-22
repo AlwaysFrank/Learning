@@ -29,3 +29,47 @@ for line in f_name:
 
 #close the file stream
 f_name.close()
+
+#streamIO
+from io import StringIO
+
+io_val = StringIO()
+
+io_val.write('Hello python3 \n~~line2\n~~line3')
+
+print('write : ',io_val.getvalue())
+
+io_val = StringIO('Hello python3 \n~~line2\n~~line3')
+while True:
+    io_line = io_val.readline()
+    if io_line == '':
+        break
+    print('line :',io_line)
+
+#pickle
+import  pickle
+d = dict(name ='xiao ming', stu_number = '111')
+print(pickle.dumps(d))
+
+f_name = open(path,'wb')
+try:
+    print('write text:', f_name.write(pickle.dumps(d)))
+finally:
+    f_name.close()
+
+f_name = open(path,'rb')
+try:
+    print('load text:', pickle.load(f_name))
+finally:
+    f_name.close()
+
+#dumps loads
+import json
+data = {'num':1002,'name':'xiao ming','age':'27'}
+
+json_data = json.dumps(data)
+print('Python data ',data)
+print('JSON data: ',json_data)
+
+data2 = json.loads(json_data)
+print('data2[name]',data2['name'])
