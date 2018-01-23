@@ -73,3 +73,8 @@ print('JSON data: ',json_data)
 
 data2 = json.loads(json_data)
 print('data2[name]',data2['name'])
+
+# repr
+repr_val = 'disp ip int b\r\nY\r\nY\r\n'
+print(repr_val)
+print(repr(repr_val))
