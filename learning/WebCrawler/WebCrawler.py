@@ -9,4 +9,4 @@ request.install_opener(opener)
 
 response = request.urlopen("https://movie.douban.com/")
 content = response.read().decode('UTF-8')
-print(content)
+print(content) 
